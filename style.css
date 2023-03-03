@@ -1,0 +1,84 @@
+/* General Styles */
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* Header Styles */
+
+header {
+	background-color: #f2f2f2;
+	padding: 50px;
+	text-align: center;
+}
+
+nav {
+	margin-bottom: 30px;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav ul li:last-child {
+	margin-right: 0;
+}
+
+h1 {
+	font-size: 3rem;
+	margin-bottom: 30px;
+}
+
+/* Services Styles */
+
+section {
+	padding: 50px;
+}
+
+.services-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.service {
+	margin: 20px;
+	flex-basis: 30%;
+	text-align: center;
+}
+
+.service img {
+	margin-bottom: 10px;
+}
+
+/* Footer Styles */
+
+footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+}
