@@ -36,8 +36,9 @@ button {
 /* Header Styles */
 
 header {
-	background: rgb(82,113,255);
-background: linear-gradient(90deg, rgba(82,113,255,1) 0%, rgba(56,182,255,1) 49%);
+	
+background: rgb(50,170,210);
+background: linear-gradient(90deg, rgba(50,170,210,1) 0%, rgba(56,92,255,1) 49%);
 	padding: 50px;
 	text-align: center;
 }
