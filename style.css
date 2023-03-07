@@ -15,7 +15,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: #FFFFFF;
+	color: #333;
 }
 
 ul {
@@ -36,9 +36,7 @@ button {
 /* Header Styles */
 
 header {
-	
-background: rgb(50,170,210);
-background: linear-gradient(90deg, rgba(50,170,210,1) 0%, rgba(56,92,255,1) 49%);
+	background-color: #f2f2f2;
 	padding: 50px;
 	text-align: center;
 }
