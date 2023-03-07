@@ -1,6 +1,68 @@
 <html>
+<head>
+      <link rel="icon" href="schoologic1.png">
+	  <title>Student login</title>
+	<style>
+		
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+	box-sizing: border-box;
+}
+		
+body {
+	background: #FFFFFF;  /* fallback for old browsers */
 	
-	.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -20px 0 50px;
+}
+  <header>
+    <nav>
+      <ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="signup.html">Sign Up</a></li>
+			</ul>
+    </nav>
+  </header>
+h1 {
+	font-weight: bold;
+	margin: 0;
+}
+
+h2 {
+	text-align: center;
+}
+
+p {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 30px;
+}
+
+span {
+	font-size: 12px;
+}
+
+a {
+	
+
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+
+.button {
 	border-radius: 20px;
 	border: 0px solid white;
 	background-color: #01579B;
@@ -243,17 +305,10 @@ footer a {
     color: #3c97bf;
     text-decoration: none;
 }
+	</style>
+	</head>
 	<body>
-  <nav>
-      <ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="services.html">Services</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="login.html">Login</a></li>
-				<li><a href="signup.html">Sign Up</a></li>
-			</ul>
-    </nav>
+
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
 		<form action="#">
@@ -309,4 +364,3 @@ signInButton.addEventListener('click', () => {
 		</script>
 	</body>
 </html>
-
