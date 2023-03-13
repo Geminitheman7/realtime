@@ -10,6 +10,22 @@
 * {
 	box-sizing: border-box;
 }
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-auth.js"></script>
+
+<script>
+  // Initialize Firebase
+  var firebaseConfig = {
+    apiKey: "AIzaSyD8UkX6g3L5NtL_DCk4Cf-qmuSoCkkLsP4",
+  authDomain: "chatultimate-75ec3.firebaseapp.com",
+  projectId: "chatultimate-75ec3",
+  storageBucket: "chatultimate-75ec3.appspot.com",
+  messagingSenderId: "811658277588",
+  appId: "1:811658277588:web:8b3252f73e9ddfb585c141",
+  measurementId: "G-K280YJ5S79"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
 		
 body {
 	background: #FFFFFF;  /* fallback for old browsers */
@@ -337,6 +353,8 @@ footer a {
 </div>
 		<script>
 			const signUpButton = document.getElementById('signUp');
+			<button onclick="signInWithGoogle()">Sign in with Google</button>
+
 const signInButton = document.getElementById('signIn');
 const container = document.getElementById('container');
 
