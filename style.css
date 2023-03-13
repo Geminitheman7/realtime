@@ -92,3 +92,16 @@ footer {
 	text-align: center;
 	padding: 20px;
 }
+button {
+  background-color: #4285F4;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #357ae8;
+}
