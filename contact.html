@@ -1,25 +1,61 @@
 
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-	     <link rel="icon" href="Realtime.png">
-    <meta charset="UTF-8" />
-    <meta https-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Best chat app for students to use in school."
-    />
-    <meta name="keywords" content="chat, students" />
-    <title>Contact Us</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	    <link rel="stylesheet" href="style.css">
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap"
-      rel="stylesheet"
-    />
-	   <header>
+<html>
+<head>
+  <title>Contact Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    .form-group button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .form-group button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+   <header>
     <nav>
       <ul>
 				<li><a href="index.html">Home</a></li>
@@ -31,742 +67,42 @@
 			</ul>
     </nav>
   </header>
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/main.css" />
-    <style>
-      /* 
-==============
-  Base styles
-=============
-*/
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-a {
-	text-decoration: none;
-	color: #333;
-}
-
-ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-button {
-	background-color: #333;
-	color: #fff;
-	border: none;
-	padding: 10px 20px;
-	border-radius: 5px;
-	cursor: pointer;
-}
-
-/* Header Styles */
-
-header {
-	background-color: #f2f2f2;
-	padding: 50px;
-	text-align: center;
-}
-
-nav {
-	margin-bottom: 30px;
-}
-
-nav ul li {
-	display: inline-block;
-	margin-right: 20px;
-}
-
-nav ul li:last-child {
-	margin-right: 0;
-}
-
-h1 {
-	font-size: 3rem;
-	margin-bottom: 30px;
-}
-
-/* Services Styles */
-
-section {
-	padding: 50px;
-}
-
-html,
-body {
-  box-sizing: border-box;
-}
-
-:root {
-  --blue: hsl(34, 100%, 50%);
-  --black-100: rgb(37, 55, 75);
-  --black-900: hsl(212, 34%, 22%);
-  --gray: hsl(210, 30%, 96%);
-}
-
-body {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: normal;
-  color: var(--black-100);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: bold;
-}
-
-a {
-  text-decoration: none;
-  transition: all 0.2s;
-  color: inherit;
-  display: inline-block;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-input[type='text'],
-input[type='email'],
-input[type='search'],
-input[type='submit'],
-input[type='tel'],
-input[type='url'],
-textarea {
-  border: none;
-  padding: 0.6rem 1rem;
-  border-radius: 0.5rem;
-  font-family: inherit;
-  width: 100%;
-  transition: all 0.2s;
-}
-
-input[type='text']:focus,
-input[type='email']:focus,
-input[type='search']:focus,
-input[type='submit']:focus,
-input[type='tel']:focus,
-input[type='url']:focus,
-textarea:focus {
-  box-shadow: 0px 0px 0px 1px var(--orange) inset;
-}
-
-button,
-.button {
-  border: none;
-  padding: 0.6rem 1rem;
-  border-radius: 0.5rem;
-  transition: all 0.2s;
-  cursor: pointer;
-}
-
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-.break {
-  display: none;
-}
-
-.container {
-  max-width: 90%;
-  margin: 0 auto;
-}
-
-.section-title {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.section-title h2 {
-  color: var(--orange);
-  margin-bottom: 0.4rem;
-}
-
-.section-title p {
-  font-size: 0.8rem;
-}
-
-.section-gray {
-  background-color: var(--gray);
-}
-
-/* * {
-  outline: solid 1px turquoise;
-} */
-
-/* 
-==============
-  Header
-=============
-*/
-
-.header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 0.6rem 0;
-}
-
-.header-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #fff;
-}
-
-.logo {
-  font-size: 1.4rem;
-}
-
-.main-nav ul {
-  display: flex;
-}
-
-.main-nav li:not(:last-child) {
-  margin-right: 1rem;
-}
-
-/* 
-==============
-  Hero
-=============
-*/
-
-.hero {
-  color: #fff;
-  padding: 8rem 0;
-  background-image: linear-gradient(
-      180deg,
-      rgba(26, 30, 35, 0.7),
-      rgba(84, 84, 84, 0.5)
-    ),
-    url(../images/hero@2x.webp);
-  background-size: cover;
-}
-
-.hero-texts {
-  text-align: center;
-}
-
-.hero-texts h2 {
-  margin-bottom: 0.6rem;
-  font-size: 2rem;
-}
-
-.hero-texts p {
-  margin-bottom: 0.4rem;
-}
-
-.food-order-form {
-  padding: 0 2rem;
-}
-
-.food-order-form form {
-  position: relative;
-}
-
-.food-order-form button {
-  position: absolute;
-  top: 1px;
-  right: 1px;
-  background-color: var(--orange);
-  color: #fff;
-}
-
-.hero a {
-  display: flex;
-  align-items: center;
-  font-size: 0.8rem;
-  margin-top: 0.4rem;
-}
-
-.hero span {
-  font-size: 0.8rem;
-  margin-right: 0.6rem;
-}
-
-/* 
-==============
-  Category
-=============
-*/
-
-.categories {
-  padding: 2rem 0;
-}
-
-.category-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.6rem;
-}
-
-.category-item {
-  text-align: center;
-}
-
-.category-item img,
-.card-image img {
-  width: 100%;
-}
-
-/* 
-==============
-  Best selling
-=============
-*/
-
-.best-selling {
-  padding: 2rem 0;
-}
-
-.best-selling-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.6rem;
-}
-
-.card-image {
-  position: relative;
-}
-
-.card-button {
-  position: absolute;
-  left: 1rem;
-  bottom: 1rem;
-  background: #fff;
-  padding: 0.4rem 0.8rem;
-  border-radius: 0.5rem;
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-
-.card-content i {
-  font-size: 0.6rem;
-}
-
-.card-content i:first-child,
-.card-content i:nth-of-type(2),
-.card-content i:nth-of-type(3),
-.card-content i:nth-of-type(4) {
-  color: var(--orange);
-}
-
-.card-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.card-price {
-  color: var(--orange);
-}
-
-/* 
-==============
-  About
-=============
-*/
-      <ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="services.html">Services</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="login.html">Login</a></li>
-				<li><a href="signup.html">New Sign Up</a></li>
-			</ul>
-.about-us {
-  padding: 2rem 0;
-}
-
-.about-us-content h2 {
-  margin-bottom: 0.6rem;
-}
-
-.about-us-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.6rem;
-}
-
-.about-us-content h2 {
-  color: var(--orange);
-}
-
-.about-us-content p {
-  font-size: 0.8rem;
-}
-
-.about-us-content p:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
-/* 
-==============
-  Contact
-=============
-*/
-.contact {
-  padding: 0 0 2rem 0;
-}
-
-.contact-grid {
-  background-color: var(--blue);
-  color: #fff;
-  padding: 0.6rem;
-  border-radius: 0.6rem;
-}
-
-.contact-form input {
-  margin-bottom: 0.6rem;
-}
-
-.newsletter-agreement {
-  margin: 0.6rem 0;
-  display: block;
-}
-
-.contact-form button {
-  width: 100%;
-  background-color: transparent;
-  border: solid 1px #fff;
-  border-radius: 0.6rem;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.contact-form button:hover {
-  background-color: #fff;
-  color: var(--orange);
-}
-
-.contact-text h2 {
-  margin-bottom: 1rem;
-}
-
-/* 
-==============
-  Footer
-=============
-*/
-
-.footer {
-  background-color: var(--black-900);
-  color: #fff;
-}
-
-.footer-inner {
-  padding: 0.6rem 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.social ul {
-  display: flex;
-}
-
-.social li:not(:last-child) {
-  margin-right: 0.8rem;
-}
-
-/* 
-================
-  Media Queries
-================
-*/
-
-/* md */
-@media (min-width: 768px) {
-  .container {
-    max-width: 680px;
-    margin: 0 auto;
-  }
-
-  .break {
-    display: block;
-  }
-
-  .hero .container {
-    max-width: 60vw;
-    margin: 0 auto;
-  }
-
-  .category-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-  }
-
-  .best-selling-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-
-  .about-us-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-
-  .contact-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-
-  .contact-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-/* lg */
-@media (min-width: 1024px) {
-  .category-grid {
-    grid-template-columns: repeat(5, 1fr);
-    gap: 2rem;
-  }
-
-  .category-item h3 {
-    font-size: 0.9rem;
-  }
-}
-
-/* xl */
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1300px;
-    margin: 0 auto;
-  }
-
-  .logo {
-    font-size: 2.5rem;
-  }
-
-  .main-nav a {
-    font-size: 1.2rem;
-  }
-
-  .main-nav li:last-child i {
-    margin-right: 0.6rem;
-  }
-
-  .hero-texts h2 {
-    font-size: 4rem;
-    line-height: 1;
-    margin-bottom: 2rem;
-  }
-
-  .hero-texts p {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  .food-order-form {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-
-  .food-order-form input {
-    padding: 1.2rem 1.8rem;
-  }
-
-  .food-order-form button {
-    position: absolute;
-    top: 4px;
-    right: 5px;
-    background-color: var(--orange);
-    color: #fff;
-    font-size: 24px;
-  }
-
-  .hero a {
-    font-size: 1.2rem;
-  }
-
-  .section-title {
-    max-width: 900px;
-    margin: 0 auto;
-    padding-bottom: 2rem;
-  }
-
-  .section-title h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  .section-title p,
-  .about-us-content p {
-    font-size: 1rem;
-  }
-
-  .categories,
-  .best-selling,
-  .about-us {
-    padding: 4rem 0;
-  }
-
-  .best-selling-grid {
-    gap: 3rem;
-  }
-
-  .card-button {
-    padding: 0.6rem 1rem;
-    font-size: 1rem;
-  }
-
-  .card-info {
-    font-size: 1.4rem;
-  }
-
-  .about-us-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .about-us-content h2 {
-    font-size: 2rem;
-  }
-
-  .contact-grid {
-    padding: 4rem;
-  }
-
-  .contact-text h2 {
-    font-size: 2.4rem;
-  }
-
-  .newsletter-agreement {
-    font-size: 1rem;
-  }
-
-  .contact-form input,
-  .contact-form button {
-    padding: 1rem;
-    font-size: 1rem;
-  }
-
-  .social i {
-    font-size: 1.4rem;
-  }
-
-  .header-inner,
-  .category-grid,
-  .best-selling-grid,
-  .about-us-grid,
-  .footer-inner {
-    padding: 0 1rem;
-  }
-
-  .contact {
-    padding: 0 2rem 2rem 2rem;
-  }
-
-  .footer {
-    padding: 1rem 0;
-  }
-
-  .footer .logo {
-    font-size: 1.8rem;
-  }
-}
-    </style>
-  </head>
-  <body>
-<center>
-
-    <section class="contact">
-      <div class="container">
-        <div class="contact-grid">
-          <div class="contact-text">
-            <h2>
-              Contact<br class="break" />
-              Us
-            </h2>
-          </div>
-          <div class="contact-form">
-            <form action="#">
-              <div>
-                <label for="firstName" class="sr-only" required>First Name</label>
-                <input
-                  type="text"
-                  name="firstName"
-                  id="firstName"
-                  placeholder="First Name"
-                />
-              </div>
-              <div>
-                <label for="lastName" class="sr-only" required>Last Name</label>
-                <input
-                  type="text"
-                  name="lastName"
-                  id="lastName"
-                  placeholder="Last Name"
-                />
-              </div>
-              <div>
-                <label for="email" class="sr-only" required>Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Write your concern"
-                />
-              </div>
-              <label class="newsletter-agreement" for="newsletterAgreement">
-                <input type="checkbox" id="newsletterAgreement" /> I agree to
-                receive newsletter
-              </label>
-
-              <button type="submit">Submit</button>
-            </form>
-          </div>
-        </div>
+	<div class="container">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
       </div>
-    </section>
-
-  </center>
-    <script src="js/app.js"></script>
-  </body>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <div id="success-message" style="display: none;">
+      <p>Thank you for your message! We will get back to you soon.</p>
+    </div>
+  </div>
+  
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      var formData = new FormData(this);
+      
+      // Simulate sending the form data to a server
+      // You can replace this with your own code to handle form submission
+      
+      // Display success message
+      document.getElementById('contact-form').style.display = 'none';
+      document.getElementById('success-message').style.display = 'block';
+    });
+  </script>
+</body>
 </html>
